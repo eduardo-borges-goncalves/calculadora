@@ -1,32 +1,23 @@
 
-
 body {
-    background-color: rgb(238, 239, 240);
+    background-color: rgb(34, 80, 94);
     font-family: sans-serif;
-    font-size: 16px;
-    padding: 40px;
- 
+    font-weight: bold;
+    padding: 45px;
+    color: rgb(16, 41, 87);
 }
  
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    margin-top: 5px;
     padding: 40px;
     border: solid rgba(1, 24, 1, 0.151) 0px;
-    background-color: rgb(250, 250, 250);
-    border-radius: 40px;
-    max-width: 600px;
-    box-shadow: 0px 2px 5px 0px rgba(29, 29, 21, 0.178);
-}
-
-h1 {
-    color: green;
-    margin-bottom: 40px;
-    margin-left: 25px;
-    margin-top: 0;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.212);
+    background-color: rgb(250, 243, 236);
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0px 2px 5px 0px rgb(29, 29, 21);
 }
 
 h3 {
@@ -35,7 +26,6 @@ h3 {
     justify-content: center;
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
-    margin-left: 15px;
     margin-top: 0;
     border-radius: 20px;
     width: 200px;
@@ -44,69 +34,76 @@ h3 {
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.226);
 }
 
-.questions {
+table {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 30px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 35px;
+td {
+    border-right: solid rgba(68, 0, 255, 0.301) 1px;
+    border-bottom: solid rgba(68, 0, 255, 0.301) 1px;
+    border-radius: 2px;
+    background-color: rgb(233, 233, 243);
+    padding: 10px 12px;
 }
 
-form select {
-    margin-top: 10px;
+td:hover {
+    color: rgb(118, 5, 146) ;
+    background-color:rgb(241, 240, 240);
+    transition-duration: 0.1s;
 }
 
-form input, select {
-    margin-bottom: 10px;
+#display {
+    height: 60px;
+    width: 177px;
+    color: rgb(36, 36, 36);
+}
+
+#div-table {
+    padding: 10px;
+    padding-bottom: 8px;
+    background-color: rgb(255, 248, 255);
+    border-radius: 2px;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.342);
+    margin: 30px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form input, form select {
     outline: none;
 }
 
-#origem-destino {
+.row-form  {
     display: flex;
-    width: 280px ;
+    width: 300px;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    margin: 10px 0px ;
 }
 
-#tempo-de-ligacao  {
+.row-form-button  {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
+
 }
 
 #tempo {   
-    margin-left: 10px;
-    height: 20px;
-    width: 50px;
-}
-
-#showResult {
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 20px;
-    border-radius: 50px;
-    padding: 20px;
-    background-color:rgb(241, 240, 250);
-    box-shadow: 3px 3px 4px 1px  rgba(0, 0, 0, 0.158);
-}
-
-#showResult label {
-    font-weight: bold;
-}
-
-input, select {
-    font-size: 16px;
-    padding: 2px;
-    padding-left: 4px;
-    border: none;
-    border-radius: px;
-    color: rgb(60, 47, 146);
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.192);
+    width: 64px;
 }
 
 #origem {
@@ -119,37 +116,52 @@ input, select {
 
 #plano {
     color: rgb(75, 64, 182);
+    width: 170px;
+}
+
+input, select {
+    height: 25px;
+    font-size: 16px;
+    margin-left: 6px;
+    padding: 0;
+    padding-left: 4px;
+    border: none;
+    color: rgb(60, 47, 146);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.192);
 }
 
 button {
     margin-bottom: 36px;
-    margin-left: 15px;
     outline: none;
     border: solid 1px rgb(75, 64, 182) ;
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: white;
     border-radius: 20px;
+    background-color:rgb(234, 232, 252);
     color: rgb(75, 64, 182) ;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.068);
 }
 
 button:hover {
-    transition: ease 3s;
     color: rgb(228, 140, 213) ;
     border: solid 1px rgb(228, 140, 213);
+    background-color:rgb(244, 242, 255);
     transform: translateY(1px);
     box-shadow: 1px 3px 10px 1px rgba(183, 8, 189, 0.226);
-    transition: ease-in-out;
-    transition-duration: 0.2s;
-
+    transition: ease-out;
+    transition-duration: 0.4s;
 }
 
-/**/
-
-#comFaleMais, #semFaleMais {
-    margin-left: 5px;
+#showResult {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:rgb(234, 232, 252);
+    box-shadow: 3px 3px 4px 1px  rgba(0, 0, 0, 0.158);
 }
 
 .div-resultado {
@@ -158,7 +170,6 @@ button:hover {
     margin-left: 20px;
     padding: 4px;
     flex-direction: row;
-    color: white;
 }
 
 #comFaleMaisCompleta {
@@ -170,23 +181,16 @@ button:hover {
 }
 
 #dadosIncorretos, #linhaIndisponivel {
+    font-weight:lighter;
     display: none;
     padding: 20px;
-    margin: auto;
     text-align: center;
     align-items: center;
     width: 250px;
-    height: 12px;
     background-color: rgb(250, 208, 208);
     border: solid 1px rgb(255, 0, 0);
-    border-radius: 25px;
+    border-radius: 5px;
     color: rgb(255, 4, 4);
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.226);
-    margin-bottom: 20px;
-}
-
-#linhaIndisponivel {
-    font-size: 14px;
-    height: 45px;
-    border-radius: 35px;
+    margin: auto;
 }
