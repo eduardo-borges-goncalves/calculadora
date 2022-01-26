@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telzir</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+    <div class="container">
+        <h1>Telzir</h1>
+        <h3>Calcule sua ligação: </h3>
+        
+        <div class="questions"> 
+            <form action="">
+                <div id="origem-destino">
+                    <div>
+                        <Label>Origem: </Label>
+                        <select name="origem" id="origem">
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                        </select>
+                    </div>
+                    <div>
+                        <Label>Destino: </Label>
+                        <select name="destino" id="destino">
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="tempo-de-ligacao">
+                    <div class="div-label">
+                        <Label>Tempo de Ligação (minutos): </Label>
+                    </div>
+                    <input type="number" name="" id="tempo">
+                </div>
+             
+                <div>
+                    <Label>Plano FaleMais: </Label>
+                    <select name="plano" id="plano">
+                        <option value="FaleMais30">FaleMais 30</option>
+                        <option value="FaleMais60">FaleMais 60</option>
+                        <option value="FaleMais120">FaleMais 120</option>
+                        
+                    </select>
+                </div>
+
+            </form>
+            <div>
+                <button id="button" onclick="validation()">Calcular</button>
+            </div>
+
+            <div id="dadosIncorretos">
+                Dados incorretos ou inválidos. Favor inserir dados válidos. 
+
+            </div>
+            <div id="linhaIndisponivel">
+                Desculpe, ainda não estamos com essa linha disponível. Por favor, tente uma linha válida. 
+            </div>
+
+            <div id="showResult">
+                
+
+                <div id="comFaleMaisCompleta" class="div-resultado">   
+                    <label for="">Com FaleMais: </label>
+                    <div id="comFaleMais"></div>
+
+                </div>
+
+                <div id="semFaleMaisCompleta" class="div-resultado">
+                    <label for="">Sem FaleMais:</label> 
+                    <div id="semFaleMais"></div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+   
+<script src="script.js"></script>
+
+</body>
+</html>
