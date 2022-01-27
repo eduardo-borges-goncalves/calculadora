@@ -2,11 +2,11 @@
 body {
     background-color: rgb(34, 80, 94);
     font-family: sans-serif;
-    font-weight: bold;
+
     padding: 45px;
     color: rgb(16, 41, 87);
 }
- 
+  
 .container {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ h3 {
     margin-bottom: 30px;
     margin-top: 0;
     border-radius: 20px;
-    width: 200px;
+    width: 180px;
     background-color:rgb(76, 64, 182);
     padding: 10px;
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.226);
@@ -43,6 +43,7 @@ table {
 }
 
 td {
+    text-align: center;
     border-right: solid rgba(68, 0, 255, 0.301) 1px;
     border-bottom: solid rgba(68, 0, 255, 0.301) 1px;
     border-radius: 2px;
@@ -52,20 +53,25 @@ td {
 
 td:hover {
     color: rgb(118, 5, 146) ;
-    background-color:rgb(241, 240, 240);
+    border-right: solid rgb(118, 5, 146) 1px;
+    border-bottom: solid rgb(118, 5, 146) 1px;
     transition-duration: 0.1s;
 }
 
 #display {
-    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
     width: 177px;
-    color: rgb(36, 36, 36);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
 }
 
 #div-table {
-    padding: 10px;
+    padding: 6px;
     padding-bottom: 8px;
-    background-color: rgb(255, 248, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 2px;
     box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.342);
     margin: 30px 50px;

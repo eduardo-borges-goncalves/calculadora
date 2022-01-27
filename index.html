@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiguan</title>
+    <title>Calc</title>
     <link rel="stylesheet" href="style.css">
-</head> 
+</head>  
 <body>
     <div class="container">
         <h3>Calculadora </h3>
@@ -15,27 +15,37 @@
             <div id="display"></div>
             <table >
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>+</td>
+                    <td id="one" onclick=addNumber(1)>1</td>
+                    <td id="two" onclick=addNumber(2)>2</td>
+                    <td id="three" onclick=addNumber(3)>3</td>
+                    <td onclick=addNumber(divide)>/</td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>-</td>
+                    <td id="four" onclick=addNumber(4)>4</td>
+                    <td id="five" onclick=addNumber(5)>5</td>
+                    <td id="six" onclick=addNumber(6)>6</td>
+                    <td onclick=addNumber(multiply)>x</td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>x</td>
+                    <td id="seven" onclick=addNumber(7)>7</td>
+                    <td id="eight" onclick=addNumber(8)>8</td>
+                    <td id="nine" onclick=addNumber(9)>9</td>
+                    <td id="less" onclick=addNumber(less)>-</td>
+
                 </tr>
                 <tr>
-                    <td>0</td>
-                    <td>=</td>
-                    <td>:</td>
+                    <td id="zero" onclick=addNumber(0)> 0 </td>
+
+                    <td id="zero" onclick=dropCharac()> < </td>  
+                    <td onclick=displayClean()> C </td>
+
+                    <td id="plus" onclick=addNumber(plus)>+</td>
+                </tr>
+                <tr>
+                    <td id="zero" onclick=addNumber(dot)>.</td>
+                    <td onclick="calc()" colspan="3"> = </td>
+
+               
                 </tr>
             </table>
         </div>
